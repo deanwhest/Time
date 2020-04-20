@@ -20,7 +20,7 @@ class CurrentTime extends React.Component {
             var d = new Array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' );
             if (city_1 === 'Sydney'){
                 if (vt.getHours() > 21) {
-                    if (vt.getDay() == 6) {
+                    if (vt.getDay() === 6) {
                         str =  " " + d[0];
                     } else {
                         str =  " " + d[vt.getDay() + 1];
@@ -42,7 +42,7 @@ class CurrentTime extends React.Component {
             }
             if (city_1 === 'London'){
                 if (vt.getHours() < 7) {
-                    if (vt.getDay() == 0) {
+                    if (vt.getDay() === 0) {
                         str =  " " + d[6];
                     } else {
                         str =  " " + d[vt.getDay() - 1];
@@ -53,7 +53,7 @@ class CurrentTime extends React.Component {
             }
             if (city_1 === 'Seoul'){
                 if (vt.getHours() > 22) {
-                    if (vt.getDay() == 6) {
+                    if (vt.getDay() === 6) {
                         str =  " " + d[0];
                     } else {
                         str =  " " + d[vt.getDay() + 1];
